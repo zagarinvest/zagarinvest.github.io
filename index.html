@@ -1,1 +1,162 @@
-Hello world
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" /> 
+    <base href="http://localhost:8080/links/work/monkey-business/zagar/" />
+    <style>
+    body { padding: 0; margin: 0; font-family: sans-serif; }
+    header {
+        background-image: url('./images/umbrella-bg.jpg');
+        background-size: 100%;
+        background-position: bottom;
+        min-height: 1200px;
+        font-family: sans-serif;
+    }
+    h1 { position: absolute; left: 300px; top: 200px; font-size: 350%; text-shadow: 1px 1px rgba(127, 127, 127, 0.5); }
+    h2 { font-size: 250%; }
+    p.about { font-size: 300%; width: 700px; position: absolute; left: 300px; top: 340px; font-weight: 100; text-shadow: 1px 1px rgba(0, 0, 0, 0.25); line-height: 1.4; }
+    nav { z-index: 100; position: fixed; top: 0; background: rgb(255, 255, 255); padding: 20px; left: 0; right: 0; box-shadow: 0 2.76726px 2.21381px rgb(0 0 0 / 7%), 0 6.6501px 5.32008px rgb(0 0 0 / 4%), 0 12.5216px 10.0172px rgb(0 0 0 / 3%), 0 22.3363px 17.869px rgb(0 0 0 / 3%), 0 41.7776px 33.4221px rgb(0 0 0 / 2%), 0 100px 80px rgb(0 0 0 / 2%), 0 1px 0 0 rgb(4 13 33 / 10%); text-align: center; }
+    .logo { position: absolute; left: 300px; right: 0; top: 100px; }
+    a { color: rgb(24, 34, 97); text-decoration: none; border-bottom: 1px solid rgba(24, 34, 97, 0.3); }
+    nav a { font-weight: bold; font-size: 120%; margin-right: 10px; margin-left: 10px; }
+    nav a:hover { border-bottom: 1px solid rgb(24, 34, 97); }
+    main { margin-left: 300px; margin-right: 300px; }
+    #credits { margin-left: -300px; margin-right: -300px; margin-top: 400px; text-align: center; }
+    svg { fill: rgb(24, 34, 97); }
+    h2 { text-align: center; margin-top: 4em; margin-bottom: 2em; }
+    #services { text-align: center; }
+    .card { width: 24%; line-height: 1.4; font-size: 120%; margin-right: 2em; margin-left: 2em; display: inline-block; text-align: center; padding: 20px; box-shadow: rgb(0 0 0 / 10%) 0px 6px 12px 0px, rgb(202 202 202 / 20%) 0px 0px 6px 0px, rgb(202 202 202 / 10%) 0px -1px 4px 0px; }
+    .card { vertical-align: top; }
+    label { display: block; margin-top: 1em; margin-bottom: 0.5em; }
+    form { width: 600px; margin: auto; margin-top: 4em; font-size: 120%; }
+    input[type='text'] { width: 100%; box-sizing: border-box; border-width: 1px; border-color: rgb(200, 200, 200); font-weight: 120%; padding: 1em; }
+    textarea { width: 100%; box-sizing: border-box; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+            <a href="#faqs">FAQs</a>
+        </nav>
+
+        <div class="logo">
+            <img src="./images/logo1.webp" />
+            <img src="./images/logo2.webp" />
+        </div>
+
+        <h1>Your financial goals are our priority</h1>
+
+        <p class="about">We’re proud of our diverse client base and offer friendly, personalised financial advice on all aspects of investments, shares and financial planning.</p>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Our services</h2>
+
+            <div>
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="rgb(120, 120, 120)" class="bi bi-bank" viewBox="0 0 16 16">
+  <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+                </svg>
+                <h3>Wealth management</h3>
+                <p>Financial planning and advice, including the best bank accounts and investment bankers to suit your needs.</p>
+            </div>
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+  <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                </svg>
+                <h3>Market updates</h3>
+                <p>Personalised stock market information relating to your financial assets, sent to your email inbox each day.</p>
+            </div>
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <h3>Investment reports</h3>
+                <p>Monthly, quarterly and annual reports for your consolidated portfolio, including performance history.</p>
+            </div>
+            </div>
+            <div style="margin-top: 40px;">
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+</svg>
+                    <h3>Tailored research</h3>
+                    <p>Stock market research and relevant global financial news to empower you to make good investment decisions.</p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+</svg>
+                    <h3>Admin services</h3>
+                    <p>Guidance with accountancy, everyday banking, property management and any legal issues that arise.</p>
+                </div>
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
+  <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+</svg>
+                    <h3>Dedicated tracking</h3>
+                    <p>Consolidated tracking of all accounts, investments and portfolios in one place for your peace of mind.</p>
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <h2>Meet the team</h2>
+            <div class="person">
+                <h3>Carlos Garza, Director</h3>
+                <p>Carlos combines extensive technical skills and more than 13 years of experience as a banking and investment professional. He can advise you on everything from setting up a family office, to finding the best way to invest your money.</p>
+            </div>
+            <div class="person">
+                <h3>Jose Antonio Torre, Wealth Manager</h3>
+                <p>Jose joined Zagar Investment in 2019, and has more than 6 years of experience in research analysis and business finance. His analytical and data gathering skills can guide and inform your financial decisions.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact us</h2>
+            <iframe width="600" height="450" style="border:0;margin:auto;display:block" loading="lazy" allowfullscreen
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6qWvssEdkgRELTV0Xwf_X4&zoom=14&key=AIzaSyB4DMTkyBDGMLxZrR4s6uYHO7jBrzscgcA"></iframe>
+            <form method="get" action="mailto:bobbyjack@gmail.com">
+                <label for="name">Name</label>
+                <input name="name" type="text" />
+
+                <label for="email">Email</label>
+                <input name="email" type="text" />
+
+                <label for="subject">Subject</label>
+                <input name="subject" type="text" />
+
+                <label for="boyd">Message</label>
+                <textarea name="body"></textarea>
+
+                <button>mail</button>
+            </form>
+        </section>
+        <section id="faqs">
+            <h2>FAQs</h2>
+
+            <div class="card">
+            Q: How much are your services?
+            A: We offer a personalised service to all our clients and aim to provide an affordable way to manage and improve your finances. We’re always happy to discuss your budget and come up with a plan that works for you.
+            </div>
+            <div class="card">
+            Q: How do you compile your stock research?
+            A: We use the best financial tools available, including Bloomberg, Yahoo Finance, Reuters, Seeking Alpha, among others.
+            </div>
+            <div class="card">
+            Q: Which stock markets do you cover?
+            A: We try to cover the most prominent stock markets, which includes the United States, London, Germany, Canada, Spain and France.
+            </div>
+        </section>
+        <section id="credits">Website by monkey business 🐒 // Umbrella image by whoever from unsplash</section>
+    </main>
+</body>
+
+</html>
+
