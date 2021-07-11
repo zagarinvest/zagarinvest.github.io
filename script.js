@@ -53,10 +53,19 @@ window.setInterval(function() {
         }
     });
 
-    //console.log(most[1]);
     document.querySelector("a[href='#" + most[1] + "']").classList.add("active");
 
 }, 500);
+
+var nav = document.querySelector("nav");
+
+window.setInterval(function() {
+    if (window.scrollY < 1200) {
+        nav.style.display = 'none';
+    } else {
+        nav.style.display = 'block';
+    }
+}, 100);
 
 function isElementInViewport (el) {
     // how much of the element is in view
