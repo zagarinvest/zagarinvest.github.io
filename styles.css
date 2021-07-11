@@ -9,12 +9,7 @@ header {
 }
 
 h1 { color: rgb(24, 34, 97); position: absolute; left: 300px; top: 300px; font-size: 350%;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); width: 600px; }
-
-h2 { font-size: 250%; border-top: 1px solid #ddd; padding-top: 2em;  text-align: center; margin-top: 2em; margin-bottom: 2em;
-    width: 600px; margin-left: auto; margin-right: auto; }
-
-#services h2 { border-top: 0; }
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5); width: 600px; }
 
 p.about { font-size: 300%; width: 700px; position: absolute; left: 300px; top: 440px; font-weight: 100;
     color: rgb(30, 30, 30); text-shadow: 2px 2px 2px rgb(255, 255, 255, 0.25); line-height: 1.4; }
@@ -25,11 +20,19 @@ nav { z-index: 100; position: fixed; top: 0; background: rgb(255, 255, 255); pad
 
 .logo { position: absolute; left: 300px; right: 0; top: 200px; }
 
+h2 { font-size: 250%; border-top: 1px solid #ddd; padding-top: 2em;  text-align: center; margin-top: 2em; margin-bottom: 2em;
+    width: 600px; margin-left: auto; margin-right: auto; }
+
+#services h2 { border-top: 0; }
+
 a, h2, .card h3 { color: rgb(24, 34, 97); }
 
 a { text-decoration: none; border-bottom: 1px solid rgba(24, 34, 97, 0.3); }
-a:hover, nav a:target { border-bottom: 1px solid rgb(24, 34, 97); }
+
+a:hover, nav a.active { border-bottom: 1px solid rgb(24, 34, 97); }
+
 nav a { font-weight: bold; font-size: 120%; margin-right: 10px; margin-left: 10px; }
+
 main { margin-left: 300px; margin-right: 300px; }
 #credits { margin-left: -300px; margin-right: -300px; margin-top: 400px; text-align: center; }
 svg { fill: rgb(24, 34, 97); }

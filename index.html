@@ -135,23 +135,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6qWvssEdkgRELTV0
         </section>
         <section id="credits">Website by monkey business 🐒 // Umbrella image by whoever from unsplash</section>
     </main>
-    <script>
-    document.querySelectorAll('nav a').forEach(function(node) {
-        //console.log(node);
-
-        node.addEventListener('click', function(ev) {
-            ev.preventDefault();
-            var targetId = ev.target.getAttribute('href').substr(1);
-            var target = document.getElementById(targetId);
-
-            window.scrollTo({
-                left: 0,
-                top: target.offsetTop - 100,
-                behavior: 'smooth'
-            });
-        });
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
