@@ -6,6 +6,7 @@ header {
     background-position: bottom;
     min-height: 1200px;
     font-family: sans-serif;
+    background-repeat:  no-repeat;
 }
 
 h1 { color: rgb(24, 34, 97); position: absolute; left: 300px; top: 300px; font-size: 350%;
@@ -19,6 +20,7 @@ nav { z-index: 100; position: fixed; top: 0; background: rgb(255, 255, 255); pad
     text-align: center; }
 
 .logo { position: absolute; left: 300px; right: 0; top: 200px; }
+.logo img { width: 300px; }
 
 h2 { font-size: 250%; border-top: 1px solid #ddd; padding-top: 2em;  text-align: center; margin-top: 2em; margin-bottom: 2em;
     width: 600px; margin-left: auto; margin-right: auto; }
@@ -34,10 +36,13 @@ a:hover, nav a.active { border-bottom: 1px solid rgb(24, 34, 97); }
 nav a { font-weight: bold; font-size: 120%; margin-right: 10px; margin-left: 10px; }
 
 main { margin-left: 300px; margin-right: 300px; }
-#credits { margin-left: -300px; margin-right: -300px; margin-top: 400px; text-align: center; }
+
+#credits { /*margin-left: -300px; margin-right: -300px;*/ margin-top: 400px; text-align: center; }
+
 svg { fill: rgb(24, 34, 97); }
 
 #services { text-align: center; }
+
 .card { width: 24%; line-height: 1.4; font-size: 120%; margin-right: 2em; margin-left: 2em; display: inline-block;
     text-align: center; padding: 20px; vertical-align: top; }
 
@@ -59,4 +64,39 @@ fieldset { text-align: center; border: 0; }
 button { font-size: 100%; padding: 0.25em 0.5em; }
 
 #credits { margin-bottom: 2em; }
+
+
+/**
+ * Responsive layouts
+ */
+
+h1 { font-size: 56px; }
+p.about { font-size: 48px; }
+
+/* e.g. laptop */
+@media screen and (max-width: 1280px) {
+    body { font-size: 16px; }
+
+    header { min-height: 800px; }
+
+    h1 { font-size: 42px; }
+    p.about { font-size: 36px; width: 500px; }
+
+    /* base the grid on 960px? */
+    main { width: 960px; margin-left: auto; margin-right: auto; }
+
+    /* 12 columns, 60px each, 10px margin either side*/
+    /* for 3 cards, each should take up 4 columns. */
+
+    /* each card should be 300px wide with 10px either side (3 x 320 = 960) */
+
+    /* width display: inline-block, this ends up wrapping, but float: left
+       fixes that. */
+
+    .card { width: 270px; padding: 10px; margin-left: 10px; margin-right: 10px; }
+
+    .logo { position: absolute; left: 300px; right: 0; top: 100px; }
+}
+
+
 
