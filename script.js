@@ -40,11 +40,11 @@ window.setInterval(function() {
 
 var nav = document.querySelector("nav");
 
-window.setInterval(function() {
+document.addEventListener('scroll', function(e) {
     var vis = window.scrollY >= 1200;
     vis = document.querySelector("header").getBoundingClientRect().bottom < 0;
     nav.style.display = vis ? 'block' : 'none';
-}, 100);
+});
 
 // Determine the proportion than an element takes of the viewport 
 function isElementInViewport (el) {
