@@ -35,19 +35,28 @@ window.setInterval(function() {
         }
     });
 
-    document.querySelector("a[href='#" + most[1] + "']").classList.add("active");
+    if (most[0]) {
+        document.querySelector("a[href='#" + most[1] + "']").classList.add("active");
+    }
 }, 500);
 
 var nav = document.querySelector("nav");
 
-document.addEventListener('scroll', function(e) {
+document.addEventListener('scroll', checkNav);
+document.addEventListener('DOMContentLoaded', checkNav);
+
+function checkNav(e) {
     var vis = window.scrollY >= 1200;
     vis = document.querySelector("header").getBoundingClientRect().bottom < 0;
     nav.style.display = vis ? 'block' : 'none';
-});
+}
 
 // Determine the proportion than an element takes of the viewport 
 function isElementInViewport (el) {
+    if (el == null) {
+        return false;
+    }
+
     var rect = el.getBoundingClientRect(),
         totalHeight = rect.bottom - rect.top,
         viewportHeight = window.innerHeight;
