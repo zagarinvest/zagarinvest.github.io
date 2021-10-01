@@ -1,7 +1,3 @@
-/* debugging */
-/*.card { outline: 1px solid black; }*/
-
-
 /*
 Global styles
 */
@@ -9,11 +5,17 @@ Global styles
 body {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a, h2, .card h3 {
     color: rgb(24, 34, 97);
+}
+
+h3 { font-size: 1.4em; }
+
+h1, p.about, h2, h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 a {
@@ -36,9 +38,12 @@ header {
     background-image: url('./images/london-skyline.jpg');
     background-size: cover;
     background-position: top;
-    font-family: sans-serif;
     background-repeat:  no-repeat;
     position: relative;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
 }
 
 nav {
@@ -61,8 +66,13 @@ nav a {
 }
 
 .intro {
-    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    margin-right: 10%;
     color: white;
+    background-color: rgba(100, 100, 100, 0.25);
+    border-radius: 0em;
 }
 
 .logo { max-width: 40%; }
@@ -98,6 +108,8 @@ p.about {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.25);
     font-weight: 400;
+
+    margin-bottom: 0;
 }
 
 .card, .callus, #newsletter p {
@@ -107,6 +119,16 @@ p.about {
 
 .card, #newsletter p {
     text-align: center;    
+}
+
+#newsletter form {
+    text-align: center;
+}
+
+#newsletter input,
+#newsletter button {
+    font: inherit;
+
 }
 
 .card {
@@ -180,7 +202,8 @@ p.about {
     }
 
     .intro {
-        padding-right: 40%;
+        padding-right: 0%;
+        margin-right: 40%;
     }
 
     .logo { max-width: 50%; }
